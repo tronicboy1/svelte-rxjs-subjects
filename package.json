@@ -1,6 +1,6 @@
 {
   "name": "@tronicboy/svelte-rxjs-subjects",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "RxJS Subjects written to be used as a Svelte Store.",
   "main": "lib/mjs/index.js",
   "exports": {
