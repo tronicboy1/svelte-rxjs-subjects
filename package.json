@@ -2,7 +2,11 @@
   "name": "@tronicboy/svelte-rxjs-subjects",
   "version": "0.0.1",
   "description": "RxJS Subjects written to be used as a Svelte Store.",
-  "main": "lib/index.js",
+  "main": "lib/mjs/index.js",
+  "exports": {
+    "import": "./lib/mjs/index.js",
+    "require": "./lib/cjs/index.js"
+  },
   "types": "types/index.d.ts",
   "author": "tronicboy1",
   "license": "MIT",
@@ -14,7 +18,7 @@
     "rxjs": "^7.8.0"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc --project tsconfig.cjs.json && tsc --project tsconfig.mjs.json"
   },
   "repository": {
     "type": "git",
